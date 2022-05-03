@@ -89,7 +89,7 @@ body {
 }
 
 
-.hover-efects a:link,
+/* .hover-efects a:link, */
 .hover-efects a:active,
 .hover-efects a:hover {
   color: rgb(207, 115, 115);
