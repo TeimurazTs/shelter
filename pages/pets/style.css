@@ -1,0 +1,228 @@
+@font-face {
+  font-family: Arial;
+  src: url(../../assets/fonts/ARIAL.ttf);
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url(../../assets/fonts/Georgia.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.header-ul {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.header-ul li a {
+  color: #545454;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hover-efects a:active,
+.hover-efects a:hover {
+  color: rgb(207, 115, 115);
+}
+
+.logo-bg {
+  color: #545454;
+  font-size: 3.2rem;
+  letter-spacing: 0.06em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.logo-sm {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292929;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.our-pets {
+  border-bottom: 4px solid #f1cdb3;
+  font-weight: 600;
+}
+
+.our-pets-heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+  margin-bottom: 45px;
+}
+
+.our-pets-friends {
+  padding: 8rem 4rem 10rem 4rem;
+  background-color: #f6f6f6;
+}
+
+.our-section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  cursor: pointer;
+  background-color: #fafafa;
+  padding-bottom: 3rem;
+}
+
+.our-section-card:hover > .btn-card {
+  background-color: rgb(187, 237, 237);
+}
+
+.our-section-card:hover {
+  background-color: #f6f6f6;
+}
+
+.our-section-card p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  letter-spacing: 0.06em;
+}
+
+.btn {
+  background-color: #f1cdb3;
+  border-radius: 10rem;
+  padding: 1.5rem 4.5rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.06em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.our-pets-article {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 40px;
+  padding: 15px 0;
+  margin-bottom: 45px;
+}
+
+.navigation-img {
+  width: 52px;
+  height: 52px;
+}
+
+.icons-div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.icons-div button {
+  border: none;
+  border-radius: 100px;
+  background-color: inherit;
+}
+
+.pointer-button {
+  cursor: pointer;
+}
+
+.footer {
+  background-image: url("../../assets/images/footer-background.png");
+  background-size: cover;
+  padding: 4rem 4rem 0 4rem;
+  display: flex;
+  gap: 16rem;
+}
+
+.footer h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.footer p {
+  color: #f1cdb3;
+  font-size: 1.9rem;
+  line-height: 115%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.06em;
+}
+
+.footer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 1.6rem;
+}
+
+.footer-card div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-card-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.6rem;
+}
+
+.footer-card-2 div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pin-img {
+  width: 2.2rem;
+  height: 3.2rem;
+}
+
+.phone-email-img {
+  width: 4rem;
+  height: 3.2rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2.5rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 3.4rem;
+}
