@@ -22,6 +22,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  background-color: #ffd7ba;
 }
 
 .container {
@@ -34,6 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 30px 40px;
+  background-color: #fff;
 }
 
 .header-ul {
