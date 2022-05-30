@@ -26,6 +26,10 @@ body {
   font-size: 1.6rem;
 }
 
+img {
+  max-width: 100%;
+}
+
 .li-none {
   list-style: none;
 }
@@ -35,14 +39,17 @@ body {
   margin: 0 auto;
 }
 
+.default-display-none {
+  display: none;
+}
+
 .btn {
   background-color: #f1cdb3;
   border-radius: 10rem;
-  padding: 1.5rem 4.5rem;
+  padding: 1.3rem 4.4rem;
   font-size: 1.7rem;
   letter-spacing: 0.06em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  display: inline-block;
   cursor: pointer;
   transition: transform 0.2s ease-in;
 }
@@ -74,7 +81,7 @@ body {
 
 .header-ul {
   display: flex;
-  gap: 3.5rem;
+  gap: 3.55rem;
 }
 
 .header-ul li a {
@@ -87,7 +94,6 @@ body {
   border-bottom: 2px solid #fafafa;
   color: #fafafa;
 }
-
 
 .hover-efects a:active,
 .hover-efects a:hover {
@@ -112,7 +118,6 @@ body {
 
 .section-1-main {
   display: flex;
-  align-items: center;
   gap: 3.2rem;
   margin-top: 6rem;
   align-items: flex-start;
@@ -124,6 +129,7 @@ body {
   align-items: flex-start;
   gap: 4.2rem;
   margin-top: 16.3rem;
+  max-width: 47rem;
 }
 
 .not-only-heading {
@@ -146,15 +152,16 @@ body {
   justify-content: center;
   gap: 12rem;
   background-color: #fff;
-  padding: 8rem 4rem 10rem 4rem;
+  padding: 7.7rem 4rem 10rem 4rem;
 }
 
 .section-about-article {
   display: flex;
   flex-direction: column;
-  gap: 1.9rem;
-  width: 43rem;
-  padding: 1.4rem 0;
+  gap: 2.2rem;
+  max-width: 43rem;
+  align-items: center;
+  padding: 0;
 }
 
 .section-about-heading {
@@ -171,14 +178,15 @@ body {
   color: #4c4c4c;
   line-height: 160%;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0 1.5rem;
 }
 
 .section-our-friends {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6rem;
-  padding: 8rem 4rem 10rem 4rem;
+  gap: 4.2rem;
+  padding: 4.2rem 1rem 4.2rem 1rem;
   background-color: #f6f6f6;
 }
 
@@ -198,7 +206,6 @@ body {
 .arrow-image:hover {
   transform: translateY(-1.5rem);
 }
-
 
 .our-section-flex {
   display: flex;
@@ -256,14 +263,33 @@ body {
 
 .section-help-us {
   background-color: #fff;
-  padding: 8rem 4rem 10rem 4rem;
+  padding: 8.3rem 3.9rem 5rem 4rem;
 }
 
 .help-us-images-first {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 12rem;
+  column-gap: 10%;
   margin-bottom: 5.5rem;
+  row-gap: 5.5rem;
+}
+
+.help-us-images-first div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.help-us-images-first div p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
 }
 
 .help-us-paragraph {
@@ -276,29 +302,6 @@ body {
   letter-spacing: 0.06em;
 }
 
-.help-us-images-second {
-  display: flex;
-  justify-content: center;
-  gap: 12rem;
-}
-
-.help-us-images-first div,
-.help-us-images-second div {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-}
-.help-us-images-first div p,
-.help-us-images-second div p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 115%;
-  letter-spacing: 0.06em;
-  color: #545454;
-}
-
 .section-donation {
   padding: 8rem 18.2rem 10rem 18.3rem;
   background-color: #f6f6f6;
@@ -307,11 +310,12 @@ body {
 .section-donation-main {
   display: flex;
   gap: 3rem;
+  align-items: center;
 }
 
 .credit-card-div {
   display: flex;
-  gap: 1rem;
+  gap: 1.4rem;
   align-items: center;
   background-color: #f1cdb3;
   padding: 1rem 1.5rem;
@@ -320,16 +324,20 @@ body {
   transition: transform 0.2s ease-in;
 }
 
+.brown-dog-wrapper {
+  max-width: 50.5rem;
+}
+
 .credit-card-div:hover {
   transform: translateY(-0.5rem);
 }
-
 
 .donation-information {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.9rem;
+  max-width: 38rem;
 }
 
 .section-donation-heading {
@@ -347,7 +355,6 @@ body {
   line-height: 110%;
   letter-spacing: 0.06em;
 }
-
 
 .credit-card-number {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -373,6 +380,7 @@ body {
   background-size: cover;
   padding: 4rem 4rem 0 4rem;
   display: flex;
+  justify-content: center;
   gap: 16rem;
 }
 
@@ -382,7 +390,7 @@ body {
   font-weight: 400;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 130%;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.059em;
 }
 
 .footer p {
@@ -390,14 +398,16 @@ body {
   font-size: 1.9rem;
   line-height: 115%;
   font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.09em;
+  max-width: 26rem;
 }
 
 .footer-card {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
-  margin-top: 1.6rem;
+  gap: 3.8rem;
+  margin-top: 1.7rem;
+  max-width: 27.8rem;
 }
 
 .footer-card div {
@@ -409,7 +419,8 @@ body {
 .footer-card-2 {
   display: flex;
   flex-direction: column;
-  margin-top: 1.6rem;
+  margin-top: 1.8rem;
+  max-width: 30.2rem;
 }
 
 .footer-card-2 div {
@@ -428,4 +439,465 @@ body {
   height: 3.2rem;
 }
 
+.footer-cards-wrapper {
+  display: flex;
+  gap: 16rem;
+}
+
 /* Footer ends here */
+
+@media (min-width: 767px) and (max-width: 1279px) {
+  .section-main {
+    background-image: url("../../assets/images/start-screen-background.jpg");
+    padding: 3rem 3rem 0 3rem;
+  }
+  .section-1-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+    margin-top: 6rem;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 8.1rem;
+  }
+
+  .header-ul {
+    display: flex;
+    gap: 3.5rem;
+  }
+
+  .logo-sm {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4.2rem;
+    margin-top: 0;
+    max-width: 46rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .starter-puppy-wraper {
+    padding: 0 0 0 13.9rem;
+  }
+
+  .section-about-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 43rem;
+    padding: 0;
+  }
+
+  .btn {
+    background-color: #f1cdb3;
+    border-radius: 10rem;
+    padding: 1.5rem 4.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.06em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+  }
+
+  .section-about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #fff;
+    padding: 8rem 16.6rem 10rem 16.5rem;
+  }
+
+  .display-none-helper-tablet {
+    display: none;
+  }
+
+  .help-us-images-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 6rem;
+    row-gap: 5.5rem;
+    margin-bottom: 0;
+    justify-items: center;
+  }
+
+  .section-donation-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem;
+    max-width: 50.5rem;
+    margin: 0 auto;
+  }
+
+  .section-our-friends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.8rem;
+    padding: 7.5rem 3rem 10rem 3rem;
+    background-color: #f6f6f6;
+  }
+
+  .our-section-flex {
+    display: flex;
+    gap: 4rem;
+  }
+
+  .our-friends-article {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .section-help-us {
+    background-color: #fff;
+    padding: 8rem 6.9rem 10rem 6.9rem;
+  }
+
+  .help-us-images-first div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.86rem;
+  }
+
+  .section-donation {
+    padding: 8.3rem 13.2rem 10rem 13.1rem;
+    background-color: #f6f6f6;
+  }
+
+  .footer {
+    background-image: url(../../assets/images/footer-background.png);
+    background-size: cover;
+    padding: 2.5rem 4rem 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.2rem;
+  }
+
+  .footer-cards-wrapper {
+    display: flex;
+    gap: 6.1rem;
+  }
+
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    margin-top: 0;
+    max-width: 27.8rem;
+  }
+
+  .footer-card-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    max-width: 30.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .display-none-helper-mobile {
+    display: none;
+  }
+
+  .default-display-none {
+    display: inline-block;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .section-main {
+    background-image: url("../../assets/images/start-screen-background.jpg");
+    padding: 4.6rem 1rem 0 1rem;
+  }
+
+  .not-only-heading {
+    font-size: 2.5rem;
+    max-width: 30rem;
+    color: #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .section-1-main {
+    display: flex;
+    align-items: center;
+    gap: 10.5rem;
+    margin-top: 4.25rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-article {
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+    margin-top: 0;
+    max-width: 49rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .starter-puppy-wraper {
+    padding: 0 0 0 4rem;
+  }
+
+  .section-about-paragraph {
+    font-size: 1.5rem;
+    color: #4c4c4c;
+    line-height: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+
+  .section-our-friends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.2rem;
+    padding: 3.2rem 1rem 4.2rem 1rem;
+    background-color: #f6f6f6;
+  }
+
+  .section-about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4.2rem;
+    background-color: #fff;
+    flex-direction: column-reverse;
+    padding: 4.2rem 1rem 4.2rem 1rem;
+    align-items: center;
+  }
+
+  .padding-warpper {
+    padding: 0 2rem 0.4rem 2rem;
+  }
+
+  .section-about-heading {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #545454;
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 30rem;
+    text-align: center;
+  }
+
+  .help-us-images-first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    gap: 3rem;
+    margin-bottom: 0;
+  }
+
+  .help-us-images-first div p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+
+  .help-us-images-first div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .section-help-us {
+    background-color: #fff;
+    padding: 4.6rem 1.5rem 4.2rem 1.5rem;
+  }
+
+  .section-donation {
+    padding: 4.4rem 1rem 3.8rem 1rem;
+    background-color: #f6f6f6;
+  }
+
+  .our-friends-article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    justify-items: center;
+    row-gap: 2rem;
+  }
+
+  .our-section-flex {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .our-friends-paragraph {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+
+  .help-us-paragraph {
+    margin-bottom: 4.2rem;
+    text-align: center;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.5rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  .brown-dog-wrapper {
+    max-width: 50.5rem;
+    padding: 0 2rem;
+  }
+
+  .footer {
+    background-image: url("../../assets/images/footer-background.png");
+    background-size: cover;
+    padding: 3rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .footer-card {
+    margin-top: 0;
+  }
+
+  .footer-card-2 {
+    margin-top: 0;
+    max-width: 30rem;
+    gap: 4rem;
+  }
+
+  .footer h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 27rem;
+    align-self: center;
+  }
+
+  .footer p {
+    text-align: left;
+  }
+
+  .section-donation-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4.2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+
+  .section-donation-heading {
+    font-size: 2.5rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+    text-align: center;
+  }
+
+  .section-donation-paragraph {
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 110%;
+    letter-spacing: 0;
+  }
+
+  .margin-bottom-big {
+    margin-bottom: 0;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 0;
+  }
+
+  .donation-information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.28rem;
+    max-width: 38rem;
+  }
+
+  .credit-card-number {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.5rem;
+    color: #545454;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+
+  .legal-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #b2b2b2;
+    font-style: italic;
+    line-height: 150%;
+    text-align: justify;
+    padding: 0 1rem;
+  }
+
+  .footer-cards-wrapper {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+  }
+
+  .footer-card div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .footer-card-2 div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .img-test-wrapper {
+    padding: 0 2rem;
+  }
+}

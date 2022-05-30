@@ -16,7 +16,8 @@
             <p class="logo-sm">Shelter for pets in Boston</p></a
           >
         </div>
-        <nav>
+        <img class="default-display-none" src="../../assets/images/Burger.png" alt="burger icon" />
+        <nav class="display-none-helper-mobile">
           <ul class="header-ul">
             <li class="about-shelter"><a href="">About the shelter</a></li>
             <li class="hover-efects">
@@ -25,7 +26,7 @@
             <li class="hover-efects">
               <a href="#help-jump">Help the shelter</a>
             </li>
-            <li class="hover-efects"><a href="#footer">contacts</a></li>
+            <li class="hover-efects"><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
       </header>
@@ -41,7 +42,7 @@
             ><button class="btn btn-get-to-know-make">Make a friend</button></a
           >
         </article>
-        <div>
+        <div class="starter-puppy-wraper">
           <img
             src="../../assets/images/start-screen-puppy.png"
             alt="An image of a puppy"
@@ -50,11 +51,13 @@
       </main>
     </section>
     <section class="container section-about">
-      <div>
+      <div class="padding-warpper">
         <img src="../../assets/images/about-pets.png" alt="" />
       </div>
       <article class="section-about-article">
-        <h2 class="section-about-heading">About the shelter &ldquo;Cozy House&rdquo;</h2>
+        <h2 class="section-about-heading">
+          About the shelter &ldquo;Cozy House&rdquo;
+        </h2>
         <p class="section-about-paragraph">
           Currently we have 121 dogs and 342 cats on our hands and statistics
           show that only 20% of them will find a family. The others will
@@ -78,7 +81,7 @@
       </p>
       <article class="our-friends-article">
         <img
-          class="arrow-image"
+          class="arrow-image arrow-left-grid"
           src="../../assets/images/button_arrow_left.png"
           alt="an arrow image"
         />
@@ -88,19 +91,21 @@
             <p>Katrine</p>
             <button class="btn btn-card">Learn more</button>
           </div>
-          <div class="our-section-card">
+          <div class="our-section-card display-none-helper-mobile">
             <img src="../../assets/images/pets-jennifer.png" alt="" />
-            <p>Jeniffer</p>
+            <p>Jennifer</p>
             <button class="btn btn-card">Learn more</button>
           </div>
-          <div class="our-section-card">
+          <div
+            class="our-section-card display-none-helper-tablet display-none-helper-mobile"
+          >
             <img src="../../assets/images/pets-woody.png" alt="" />
             <p>Woody</p>
             <button class="btn btn-card">Learn more</button>
           </div>
         </div>
         <img
-          class="arrow-image"
+          class="arrow-image arrow-right-grid"
           src="../../assets/images/button_arrow_right.png"
           alt="an arrow image"
         />
@@ -122,7 +127,7 @@
             src="../../assets/images/icon-pet-food.svg"
             alt="picutre of a pet food"
           />
-          <p>Pet Food</p>
+          <p>Pet food</p>
         </div>
         <div>
           <img
@@ -143,7 +148,7 @@
             src="../../assets/images/icon-bowls-and-cups.svg"
             alt="image of a bowl and a cup"
           />
-          <p>Bowls and Cups</p>
+          <p>Bowls and cups</p>
         </div>
         <div>
           <img
@@ -152,8 +157,6 @@
           />
           <p>Shampoos</p>
         </div>
-      </div>
-      <div class="help-us-images-second">
         <div>
           <img
             src="../../assets/images/icon-vitamins.svg"
@@ -173,7 +176,7 @@
             src="../../assets/images/icon-collars-leashes.svg"
             alt="image of a collars Lashes"
           />
-          <p>Collars/Lashes</p>
+          <p>Collars / leashes</p>
         </div>
         <div>
           <img
@@ -186,17 +189,19 @@
     </section>
     <section class="section-donation container">
       <main class="section-donation-main">
-        <img
-          src="../../assets/images/donation-dog.png"
-          alt="image of a brown dog"
-        />
+        <div class="brown-dog-wrapper">
+          <img
+            src="../../assets/images/donation-dog.png"
+            alt="image of a brown dog"
+          />
+        </div>
         <div class="donation-information">
           <h3 class="section-donation-heading">
             You can also <br />
             make a donation
           </h3>
           <p class="section-donation-paragraph">
-            Name of the bank/ type of the bank
+            Name of the bank / Type of bank account
           </p>
           <div class="credit-card-div">
             <img
@@ -215,68 +220,72 @@
       </main>
     </section>
     <footer class="footer container" id="footer">
-      <div class="footer-card">
-        <h3>For questions and suggestions</h3>
-        <div>
-          <a href="mailto:amail@shelter.com">
-            <img
-              class="phone-email-img"
-              src="../../assets/images/mail.png"
-              alt="icon of email"
-          /></a>
-          <a href="mailto:amail@shelter.com"><p>email@shelter.com</p></a>
+      <div class="footer-cards-wrapper">
+        <div class="footer-card">
+          <h3>For questions and suggestions</h3>
+          <div>
+            <a href="mailto:amail@shelter.com">
+              <img
+                class="phone-email-img"
+                src="../../assets/images/mail.png"
+                alt="icon of email"
+            /></a>
+            <a href="mailto:amail@shelter.com"><p>email@shelter.com</p></a>
+          </div>
+          <div>
+            <a href="tel:+13 674 567 75 54">
+              <img
+                class="phone-email-img"
+                src="../../assets/images/phone.png"
+                alt="icon phone"
+            /></a>
+            <a href="tel:+13 674 567 75 54"><p>+13 674 567 75 54</p></a>
+          </div>
         </div>
-        <div>
-          <a href="tel:+13 674 567 75 54">
-            <img
-              class="phone-email-img"
-              src="../../assets/images/phone.png"
-              alt="icon phone"
-          /></a>
-          <a href="tel:+13 674 567 75 54"><p>+13 674 567 75 54</p></a>
+        <div class="footer-card-2">
+          <h3 class="margin-bottom-big">We are waiting for your visit</h3>
+          <div class="margin-bottom-medium">
+            <a
+              href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
+              target="_blank"
+            >
+              <img
+                class="pin-img"
+                src="../../assets/images/pin.png"
+                alt="pin icon"
+            /></a>
+            <a
+              href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
+              target="_blank"
+              ><p>1 Central Street, Boston (entrance from the store)</p></a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
+              target="_blank"
+            >
+              <img
+                class="pin-img"
+                src="../../assets/images/pin.png"
+                alt="pin icon"
+            /></a>
+            <a
+              href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
+              target="_blank"
+            >
+              <p>18 South Park, London</p></a
+            >
+          </div>
         </div>
       </div>
-      <div class="footer-card-2">
-        <h3 class="margin-bottom-big">We are waiting for your visit</h3>
-        <div class="margin-bottom-medium">
-          <a
-            href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
-            target="_blank"
-          >
-            <img
-              class="pin-img"
-              src="../../assets/images/pin.png"
-              alt="pin icon"
-          /></a>
-          <a
-            href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
-            target="_blank"
-            ><p>1 Central Street, Boston (entrance from the store)</p></a
-          >
-        </div>
-        <div>
-          <a
-            href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
-            target="_blank"
-          >
-            <img
-              class="pin-img"
-              src="../../assets/images/pin.png"
-              alt="pin icon"
-          /></a>
-          <a
-            href="https://www.google.com/maps/place/%E1%83%91%E1%83%94%E1%83%A0%E1%83%9B%E1%83%A3%E1%83%93%E1%83%90/@32.3192794,-64.8364403,12z/data=!3m1!4b1!4m5!3m4!1s0x8a2d139e8668b0a5:0x3cdffdc72c99b8bc!8m2!3d32.3178927!4d-64.7370243"
-            target="_blank"
-          >
-            <p>18 South Park, London</p></a
-          >
-        </div>
+      <div class="img-test-wrapper">
+        <img
+          class="img-test"
+          src="../../assets/images/footer-puppy.png"
+          alt="picture of a cute dog"
+        />
       </div>
-      <img
-        class="img-test"
-        src="../../assets/images/footer-puppy.png"
-        alt="picture of a cute dog"
-      />
     </footer>
   </body>
 </html>
