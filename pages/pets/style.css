@@ -16,6 +16,10 @@
   list-style: none;
 }
 
+/* img {
+  width: 100%;
+} */
+
 html {
   font-size: 62.5%;
 }
@@ -28,6 +32,10 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.default-display-none {
+  display: none;
 }
 
 .header {
@@ -232,4 +240,230 @@ body {
 
 .margin-bottom-big {
   margin-bottom: 3.4rem;
+}
+
+.footer-cards-wrapper {
+  display: flex;
+  gap: 16rem;
+}
+
+@media (min-width: 767px) and (max-width: 1279px) {
+  .helper-dissapear-tablet {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem;
+    background-color: #fff;
+  }
+
+  .logo-sm {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292929;
+    margin-top: 0.9rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+
+  .our-pets-article {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+    padding: 15px 0;
+    margin-bottom: 45px;
+  }
+
+  .our-pets-heading {
+    margin-bottom: 3rem;
+  }
+
+  .our-pets-article {
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+
+  .our-pets-friends {
+    padding: 7.8rem 9.4rem 7rem 9.4rem;
+  }
+
+  .footer {
+    background-image: url("../../assets/images/footer-background.png");
+    background-size: cover;
+    padding: 2.5rem 4rem 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.2rem;
+  }
+
+  .footer p {
+    letter-spacing: 0.085em;
+  }
+
+  .footer h3 {
+    letter-spacing: 0.059em;
+  }
+
+  .footer-cards-wrapper {
+    display: flex;
+    gap: 6.1rem;
+    padding-top: 0.5rem;
+  }
+
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3.8rem;
+    margin-top: 0;
+    max-width: 27.8rem;
+  }
+
+  .footer-card-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    max-width: 30.2rem;
+    gap: 3.3rem;
+  }
+
+  .margin-bottom-big {
+    margin-bottom: 0;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    background-image: url("../../assets/images/footer-background.png");
+    background-size: cover;
+    padding: 3rem 1rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .header {
+    padding: 3rem 5rem 3rem 1rem;
+  }
+
+  .our-pets-friends {
+    padding: 3.9rem 1rem 3.7rem 1rem;
+  }
+
+  .display-none-helper-mobile {
+    display: none;
+  }
+
+  .our-pets-article {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(1, 1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+    padding: 0;
+    margin-bottom: 4.2rem;
+  }
+
+  .icons-div {
+    gap: 1rem;
+  }
+
+  .our-pets-heading {
+    font-size: 2.5rem;
+    margin-bottom: 4.2rem;
+  }
+
+  .default-display-none {
+    display: inline-block;
+  }
+
+  .margin-bottom-big {
+    margin-bottom: 0;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 0;
+  }
+
+  .footer-card {
+    margin-top: 0;
+  }
+
+  .footer-card-2 {
+    margin-top: 0;
+    max-width: 30rem;
+    gap: 4rem;
+  }
+
+  .footer h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    max-width: 27rem;
+    align-self: center;
+  }
+
+  .footer p {
+    text-align: left;
+    letter-spacing: 0.09em;
+  }
+
+  .margin-bottom-big {
+    margin-bottom: 0;
+  }
+
+  .margin-bottom-medium {
+    margin-bottom: 0;
+  }
+
+  .footer-cards-wrapper {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.5rem;
+  }
+
+  .footer-card div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .footer-card-2 div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .img-test-wrapper {
+    padding: 0 2rem !important;
+  }
+
+  .img-test {
+    width: 100%;
+  }
+
+  .phone-email-img {
+    width: 4rem;
+    height: 2.6rem;
+  }
+
+  .phone-email-img.phone-img {
+    width: 4rem;
+    height: 3.2rem;
+  }
 }
