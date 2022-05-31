@@ -54,6 +54,10 @@ img {
   transition: transform 0.2s ease-in;
 }
 
+.btn.btn-get-to-know-make.padding-make {
+  padding: 1.3rem 4.4rem;
+}
+
 .margin-bottom-small {
   margin-bottom: 2.5rem;
 }
@@ -152,16 +156,15 @@ img {
   justify-content: center;
   gap: 12rem;
   background-color: #fff;
-  padding: 7.7rem 4rem 10rem 4rem;
+  padding: 7.4rem 4rem 10rem 4rem;
 }
 
 .section-about-article {
   display: flex;
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 2.5rem;
   max-width: 43rem;
-  align-items: center;
-  padding: 0;
+  padding-top: 1.4rem;
 }
 
 .section-about-heading {
@@ -178,15 +181,15 @@ img {
   color: #4c4c4c;
   line-height: 160%;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 0 1.5rem;
+  padding: 0;
 }
 
 .section-our-friends {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4.2rem;
-  padding: 4.2rem 1rem 4.2rem 1rem;
+  gap: 5.8rem;
+  padding: 7.7rem 1rem 4.2rem 1rem;
   background-color: #f6f6f6;
 }
 
@@ -263,7 +266,7 @@ img {
 
 .section-help-us {
   background-color: #fff;
-  padding: 8.3rem 3.9rem 5rem 4rem;
+  padding: 14rem 3.9rem 4.8rem 4rem;
 }
 
 .help-us-images-first {
@@ -272,7 +275,7 @@ img {
   justify-content: center;
   column-gap: 10%;
   margin-bottom: 5.5rem;
-  row-gap: 5.5rem;
+  row-gap: 5.7rem;
 }
 
 .help-us-images-first div {
@@ -326,6 +329,7 @@ img {
 
 .brown-dog-wrapper {
   max-width: 50.5rem;
+  padding: 0.5rem 0 0 0;
 }
 
 .credit-card-div:hover {
@@ -444,6 +448,10 @@ img {
   gap: 16rem;
 }
 
+.btn-get-to-know-make {
+  padding: 1.5rem 4.4rem 1.5rem 4.4rem;
+}
+
 /* Footer ends here */
 
 @media (min-width: 767px) and (max-width: 1279px) {
@@ -519,7 +527,7 @@ img {
     align-items: center;
     gap: 8rem;
     background-color: #fff;
-    padding: 8rem 16.6rem 10rem 16.5rem;
+    padding: 8.3rem 16.6rem 10rem 16.5rem;
   }
 
   .display-none-helper-tablet {
@@ -538,7 +546,7 @@ img {
   .section-donation-main {
     display: flex;
     flex-direction: column-reverse;
-    gap: 6rem;
+    gap: 5.4rem;
     max-width: 50.5rem;
     margin: 0 auto;
   }
@@ -577,14 +585,14 @@ img {
   }
 
   .section-donation {
-    padding: 8.3rem 13.2rem 10rem 13.1rem;
+    padding: 8.3rem 13.2rem 9.6rem 13.1rem;
     background-color: #f6f6f6;
   }
 
   .footer {
-    background-image: url(../../assets/images/footer-background.png);
+    background-image: url("../../assets/images/footer-background.png");
     background-size: cover;
-    padding: 2.5rem 4rem 0 4rem;
+    padding: 3rem 4rem 0 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -609,6 +617,14 @@ img {
     flex-direction: column;
     margin-top: 0rem;
     max-width: 30.2rem;
+  }
+
+  .donation-information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.99rem;
+    max-width: 38rem;
   }
 }
 
@@ -677,7 +693,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 4.2rem;
-    padding: 3.2rem 1rem 4.2rem 1rem;
+    padding: 4.1rem 1rem 4.2rem 1rem;
     background-color: #f6f6f6;
   }
 
@@ -685,10 +701,10 @@ img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4.2rem;
+    gap: 3.9rem;
     background-color: #fff;
     flex-direction: column-reverse;
-    padding: 4.2rem 1rem 4.2rem 1rem;
+    padding: 3.8rem 1rem 3.6rem 1rem;
     align-items: center;
   }
 
@@ -734,7 +750,7 @@ img {
 
   .section-help-us {
     background-color: #fff;
-    padding: 4.6rem 1.5rem 4.2rem 1.5rem;
+    padding: 4rem 1.5rem 4.2rem 1.5rem;
   }
 
   .section-donation {
@@ -783,11 +799,11 @@ img {
   .footer {
     background-image: url("../../assets/images/footer-background.png");
     background-size: cover;
-    padding: 3rem 1rem 0 1rem;
+    padding: 2.9rem 1rem 0 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4rem;
+    gap: 3.8rem;
   }
 
   .footer-card {
@@ -900,4 +916,22 @@ img {
   .img-test-wrapper {
     padding: 0 2rem;
   }
+
+  .section-about-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 43rem;
+    padding-top: 0;
+    align-items: center;
+  }
+
+  .section-about-paragraph {
+    font-size: 1.5rem;
+    color: #4c4c4c;
+    line-height: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    padding: 0 1.5rem;
+}
 }
