@@ -9,14 +9,33 @@
   </head>
   <body>
     <section class="container section-main">
+      <div class="dom-main-header dom-display-none">
+        <nav class="dom-nav-width">
+          <ul class="header-ul dom-header-ul">
+            <li class="about-shelter"><a href="">About the shelter</a></li>
+            <li class="hover-efects">
+              <a href="../pets/index.html">Our pets</a>
+            </li>
+            <li class="hover-efects">
+              <a href="#help-jump">Help the shelter</a>
+            </li>
+            <li class="hover-efects"><a href="#footer">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="dom-header-dim"></div>
+      </div>
       <header class="header">
-        <div class="logo">
+        <div class="logo dom-logo">
           <a href="../main/index.html"
             ><h1 class="logo-bg">Cozy House</h1>
             <p class="logo-sm">Shelter for pets in Boston</p></a
           >
         </div>
-        <img class="default-display-none" src="../../assets/images/Burger.png" alt="burger icon" />
+        <img
+          class="default-display-none dom-burger"
+          src="../../assets/images/Burger.png"
+          alt="burger icon"
+        />
         <nav class="display-none-helper-mobile">
           <ul class="header-ul">
             <li class="about-shelter"><a href="">About the shelter</a></li>
@@ -39,7 +58,9 @@
             anybody else in the world, you will see!
           </p>
           <a href="#friends"
-            ><button class="btn btn-get-to-know-make padding-make">Make a friend</button></a
+            ><button class="btn btn-get-to-know-make padding-make">
+              Make a friend
+            </button></a
           >
         </article>
         <div class="starter-puppy-wraper">
@@ -81,23 +102,23 @@
       </p>
       <article class="our-friends-article">
         <img
-          class="arrow-image arrow-left-grid"
+          class="arrow-image arrow-left-grid dom-arrow-left"
           src="../../assets/images/button_arrow_left.png"
           alt="an arrow image"
         />
         <div class="our-section-flex">
-          <div class="our-section-card">
+          <div class="our-section-card dom-pets-box">
             <img src="../../assets/images/pets-katrine.png" alt="" />
             <p>Katrine</p>
             <button class="btn btn-card">Learn more</button>
           </div>
-          <div class="our-section-card display-none-helper-mobile">
+          <div class="our-section-card display-none-helper-mobile dom-pets-box">
             <img src="../../assets/images/pets-jennifer.png" alt="" />
             <p>Jennifer</p>
             <button class="btn btn-card">Learn more</button>
           </div>
           <div
-            class="our-section-card display-none-helper-tablet display-none-helper-mobile"
+            class="our-section-card display-none-helper-tablet display-none-helper-mobile dom-pets-box"
           >
             <img src="../../assets/images/pets-woody.png" alt="" />
             <p>Woody</p>
@@ -105,7 +126,7 @@
           </div>
         </div>
         <img
-          class="arrow-image arrow-right-grid"
+          class="arrow-image arrow-right-grid dom-arrow-right"
           src="../../assets/images/button_arrow_right.png"
           alt="an arrow image"
         />
@@ -287,5 +308,6 @@
         />
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

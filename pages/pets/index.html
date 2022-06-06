@@ -9,16 +9,37 @@
   </head>
   <body>
     <header class="header container">
-      <div class="logo">
+      <div class="dom-main-header dom-display-none">
+        <nav class="dom-nav-width">
+          <ul class="header-ul dom-header-ul">
+            <li class="about-shelter"><a href="">About the shelter</a></li>
+            <li class="hover-efects">
+              <a href="../pets/index.html">Our pets</a>
+            </li>
+            <li class="hover-efects">
+              <a href="#help-jump">Help the shelter</a>
+            </li>
+            <li class="hover-efects"><a href="#footer">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="dom-header-dim"></div>
+      </div>
+      <div class="logo dom-logo">
         <a href="../main/index.html"
           ><h1 class="logo-bg">Cozy House</h1>
           <p class="logo-sm">Shelter for pets in Boston</p></a
         >
       </div>
-      <img class="default-display-none" src="../../assets/images/Burger.png" alt="burger icon" />
+      <img
+        class="default-display-none dom-burger"
+        src="../../assets/images/Burger.png"
+        alt="burger icon"
+      />
       <nav class="display-none-helper-mobile">
         <ul class="header-ul">
-          <li class="about-shelter hover-efects"><a href="../main/index.html">About the shelter</a></li>
+          <li class="about-shelter hover-efects">
+            <a href="../main/index.html">About the shelter</a>
+          </li>
           <li class="our-pets">
             <a href="../pets/index.html">Our pets</a>
           </li>
@@ -65,12 +86,16 @@
           <p>Charly</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card helper-dissapear-tablet display-none-helper-mobile">
+        <div
+          class="our-section-card helper-dissapear-tablet display-none-helper-mobile"
+        >
           <img src="../../assets/images/pets-scarlet.png" alt="" />
           <p>Scarlett</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card helper-dissapear-tablet display-none-helper-mobile">
+        <div
+          class="our-section-card helper-dissapear-tablet display-none-helper-mobile"
+        >
           <img src="../../assets/images/pets-freddie.png" alt="" />
           <p>Freddie</p>
           <button class="btn btn-card">Learn more</button>
@@ -182,5 +207,6 @@
         />
       </div>
     </footer>
+    <script src="../main/script.js"></script>
   </body>
 </html>

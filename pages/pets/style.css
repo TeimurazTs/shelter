@@ -468,3 +468,64 @@ body {
     height: 3.2rem;
   }
 }
+
+/* Dom stuff */
+
+.dom-rotate {
+  transform: rotate(90deg);
+}
+
+.dom-burger,
+.dom-logo {
+  z-index: 1;
+  transition: all 1s;
+}
+
+.dom-display-none {
+  display: none;
+}
+
+.dom-main-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0rem;
+  left: -100%;
+  animation: slide-in 0.5s forwards;
+  animation-delay: 0.3s;
+}
+
+.dom-nav-width {
+  width: 32rem;
+  background-color: #292929;
+  height: 100%;
+  padding-top: 15.8rem;
+}
+
+.dom-nav-width ul li a {
+  color: #fff;
+}
+
+.dom-logo .logo-bg,
+.logo-sm {
+  color: #fff;
+}
+
+.header-ul.dom-header-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slide-in {
+  100% {
+    left: 0;
+  }
+}
