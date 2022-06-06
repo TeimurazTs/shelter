@@ -958,7 +958,7 @@ img {
   width: 100vw;
   position: absolute;
   top: 0rem;
-  left: -100%;
+  right: -100%;
   animation: slide-in 0.5s forwards;
   animation-delay: 0.3s;
 }
@@ -968,6 +968,8 @@ img {
   background-color: #292929;
   height: 100%;
   padding-top: 15.8rem;
+  position: absolute;
+  right: 0;
 }
 
 .header-ul.dom-header-ul {
@@ -978,13 +980,13 @@ img {
 
 @-webkit-keyframes slide-in {
   100% {
-    left: 0;
+    right: 0;
   }
 }
 
 @keyframes slide-in {
   100% {
-    left: 0;
+    right: 0;
   }
 }
 

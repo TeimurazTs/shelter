@@ -13,13 +13,13 @@
         <nav class="dom-nav-width">
           <ul class="header-ul dom-header-ul">
             <li class="about-shelter"><a href="">About the shelter</a></li>
-            <li class="hover-efects">
+            <li class="hover-efects dom-nav-event">
               <a href="../pets/index.html">Our pets</a>
             </li>
-            <li class="hover-efects">
+            <li class="hover-efects dom-nav-event">
               <a href="#help-jump">Help the shelter</a>
             </li>
-            <li class="hover-efects"><a href="#footer">Contacts</a></li>
+            <li class="hover-efects dom-nav-event"><a href="#footer">Contacts</a></li>
           </ul>
         </nav>
         <div class="dom-header-dim"></div>
@@ -56,45 +56,45 @@
         are looking for a house
       </p>
       <article class="our-pets-article">
-        <div class="our-section-card">
+        <div class="our-section-card dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-katrine.png" alt="" />
           <p>Katrine</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card">
+        <div class="our-section-card dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-jennifer.png" alt="" />
           <p>Jennifer</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card">
+        <div class="our-section-card dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-woody.png" alt="" />
           <p>Woody</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card display-none-helper-mobile">
+        <div class="our-section-card display-none-helper-mobile dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-sophia.png" alt="" />
           <p>Sophia</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card display-none-helper-mobile">
+        <div class="our-section-card display-none-helper-mobile dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-timmy.png" alt="" />
           <p>Timmy</p>
           <button class="btn btn-card">Learn more</button>
         </div>
-        <div class="our-section-card display-none-helper-mobile">
+        <div class="our-section-card display-none-helper-mobile dom-not-box dom-pets-box">
           <img src="../../assets/images/pets-charly.png" alt="" />
           <p>Charly</p>
           <button class="btn btn-card">Learn more</button>
         </div>
         <div
-          class="our-section-card helper-dissapear-tablet display-none-helper-mobile"
+          class="our-section-card helper-dissapear-tablet display-none-helper-mobile dom-not-box dom-pets-box"
         >
           <img src="../../assets/images/pets-scarlet.png" alt="" />
           <p>Scarlett</p>
           <button class="btn btn-card">Learn more</button>
         </div>
         <div
-          class="our-section-card helper-dissapear-tablet display-none-helper-mobile"
+          class="our-section-card helper-dissapear-tablet display-none-helper-mobile dom-not-box dom-pets-box"
         >
           <img src="../../assets/images/pets-freddie.png" alt="" />
           <p>Freddie</p>
@@ -103,39 +103,29 @@
       </article>
       <div class="icons-div">
         <button>
-          <img
-            class="navigation-img"
-            src="../../assets/images/button_paginator_inactive.png"
-            alt="arrow"
-          />
+          <div class="new-guest pointer-button">
+            <p>&#8810;</p>
+          </div>
         </button>
         <button>
-          <img
-            class="navigation-img"
-            src="../../assets/images/button_paginator_inactive_righ.png"
-            alt="arrow"
-          />
+          <div class="new-guest pointer-button">
+            <p>&#60;</p>
+          </div>
         </button>
         <button>
-          <img
-            class="navigation-img"
-            src="../../assets/images/button_paginator.png"
-            alt="start-button"
-          />
+          <div class="new-guest pointer-button">
+            <p>1</p>
+          </div>
         </button>
         <button>
-          <img
-            class="navigation-img pointer-button"
-            src="../../assets/images/button_paginator_active.png"
-            alt="arrow"
-          />
+          <div class="new-guest pointer-button dom-pointer-button">
+            <p>&#62;</p>
+          </div>
         </button>
         <button>
-          <img
-            class="navigation-img pointer-button"
-            src="../../assets/images/button_paginator_right.png"
-            alt="arrow"
-          />
+          <div class="new-guest pointer-button">
+            <p>&#8811;</p>
+          </div>
         </button>
       </div>
     </section>
@@ -206,7 +196,9 @@
           alt="picture of a cute dog"
         />
       </div>
+      <div class="dom-arrow-left dom-arrow-right" style="display: none;"></div>
     </footer>
     <script src="../main/script.js"></script>
+    <script src="./script.js" ></script>
   </body>
 </html>

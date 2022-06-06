@@ -4,6 +4,11 @@ let menu = document.querySelector(".dom-main-header");
 
 burger.addEventListener("click", () => {
   burger.classList.toggle("dom-rotate");
+  if (burger.classList[2] === "dom-rotate") {
+    disableScroll();
+  } else {
+    enableScroll();
+  }
   menu.classList.toggle("dom-display-none");
 });
 
@@ -13,8 +18,35 @@ let arrowLeft = document.querySelector(".dom-arrow-left");
 let arrowRight = document.querySelector(".dom-arrow-right");
 let petBox = document.querySelectorAll(".dom-pets-box");
 
+// scrol disable stuff
 
+function disableScroll() {
+  window.onscroll = function () {
+    window.scrollTo(window.pageYOffset, window.pageXOffset);
+  };
+}
+function enableScroll() {
+  window.onscroll = function () {};
+}
+
+// navigation listeners
+
+let navLi = document.querySelectorAll(".dom-nav-event");
 for (let i = 0; i < 3; i++) {
+  navLi[i].addEventListener("click", () => {
+    burger.classList.toggle("dom-rotate");
+    if (burger.classList[2] === "dom-rotate") {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+    menu.classList.toggle("dom-display-none");
+  });
+}
+
+// carousel stuff
+
+for (let i = 0; i < petBox.length; i++) {
   petBox[i].addEventListener("click", (e) => {
     let count = 0;
     fetch("../Pets.json")
@@ -88,13 +120,37 @@ for (let i = 0; i < 3; i++) {
 let count = 0;
 
 function createPets(petsData) {
-  if (count > 7) {
-    count = 0;
+  if (window.screen.availWidth >= 1280) {
+    for (let i = 0; i < petBox.length; i++) {
+      if (count > 7) {
+        count = 0;
+      }
+      petBox[i].children[0].setAttribute("src", `${petsData[count].img}`);
+      petBox[i].children[1].textContent = petsData[count].name;
+      count++;
+    }
   }
-  for (let i = 0; i < petBox.length; i++) {
-    petBox[i].children[0].setAttribute("src", `${petsData[count].img}`);
-    petBox[i].children[1].textContent = petsData[count].name;
-    count++;
+
+  if (window.screen.availWidth >= 768 && window.screen.availWidth <= 1280) {
+    for (let i = 0; i < 2; i++) {
+      if (count > 7) {
+        count = 0;
+      }
+      petBox[i].children[0].setAttribute("src", `${petsData[count].img}`);
+      petBox[i].children[1].textContent = petsData[count].name;
+      count++;
+    }
+  }
+
+  if (window.screen.availWidth <= 768) {
+    for (let i = 0; i < 1; i++) {
+      if (count > 7) {
+        count = 0;
+      }
+      petBox[i].children[0].setAttribute("src", `${petsData[count].img}`);
+      petBox[i].children[1].textContent = petsData[count].name;
+      count++;
+    }
   }
 }
 
