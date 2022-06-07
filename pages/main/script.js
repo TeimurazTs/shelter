@@ -1,5 +1,3 @@
-alert('Hello, I still have some work to do. Could you check my task later?')
-
 // header stuff
 let burger = document.querySelector(".dom-burger");
 let menu = document.querySelector(".dom-main-header");
