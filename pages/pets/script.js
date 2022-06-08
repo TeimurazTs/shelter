@@ -1,7 +1,16 @@
+// create array of 8 random numbers
 let thisarray = [];
 let thatarray = [];
-let counter = 1;
-let evenListenerCout = 1;
+
+function createErray() {
+  thisarray = [];
+  while (thisarray.length !== 8) {
+    let num = Math.floor(Math.random() * 10 - 2);
+    if (num >= 0 && !thisarray.includes(num)) {
+      thisarray.push(num);
+    }
+  }
+}
 
 function createErray2() {
   thatarray = [];
@@ -13,15 +22,8 @@ function createErray2() {
   }
 }
 
-function createErray() {
-  thisarray = [];
-  while (thisarray.length !== 8) {
-    let num = Math.floor(Math.random() * 10 - 2);
-    if (num >= 0 && !thisarray.includes(num)) {
-      thisarray.push(num);
-    }
-  }
-}
+let counter = 1;
+let evenListenerCout = 1;
 
 let domNotPets = document.querySelectorAll(".dom-not-box");
 

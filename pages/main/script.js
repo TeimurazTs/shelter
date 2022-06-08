@@ -49,6 +49,9 @@ for (let i = 0; i < 3; i++) {
 for (let i = 0; i < petBox.length; i++) {
   petBox[i].addEventListener("click", (e) => {
     let count = 0;
+    // if (e.target.localName === "p") {
+    //   e.target = e.target.parentElement.children[0];
+    // }
     fetch("../Pets.json")
       .then((response) => {
         return response.json();
@@ -68,7 +71,7 @@ for (let i = 0; i < petBox.length; i++) {
         domMain.append(domDiv);
 
         let domImg = document.createElement("img");
-        domImg.setAttribute("src", `${data[count].img}`);
+        domImg.setAttribute("src", `${e.target.parentElement.children[0].attributes.src.nodeValue}`);
         domDiv.append(domImg);
 
         let domDivChild = document.createElement("div");
@@ -111,7 +114,7 @@ for (let i = 0; i < petBox.length; i++) {
 
         let domli4 = document.createElement("li");
         domli4.classList.add("dom-li");
-        domli4.textContent = "Diseases: " + data[count].diseases;
+        domli4.textContent = "parasites: " + data[count].parasites;
         domDivChild.append(domli4);
       });
   });
