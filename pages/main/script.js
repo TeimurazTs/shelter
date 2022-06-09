@@ -26,7 +26,7 @@ function disableScroll() {
   };
 }
 function enableScroll() {
-  window.onscroll = function () {};
+  window.onscroll = function () { };
 }
 
 // navigation listeners
@@ -69,6 +69,17 @@ for (let i = 0; i < petBox.length; i++) {
         let domDiv = document.createElement("div");
         domDiv.classList.add("dom-div-popup");
         domMain.append(domDiv);
+
+        let closeDiv = document.createElement('div');
+        closeDiv.classList.add('closeDiv')
+        let closeDivP = document.createElement('p');
+        closeDiv.addEventListener('click', () => {
+          document.body.removeChild(domMain);
+        })
+
+        closeDivP.textContent = 'x';
+        closeDiv.append(closeDivP);
+        domDiv.append(closeDiv);
 
         let domImg = document.createElement("img");
         domImg.setAttribute("src", `${e.target.parentElement.children[0].attributes.src.nodeValue}`);
