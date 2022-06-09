@@ -48,6 +48,7 @@ for (let i = 0; i < 3; i++) {
 
 for (let i = 0; i < petBox.length; i++) {
   petBox[i].addEventListener("click", (e) => {
+    document.body.style.overflow = 'hidden'
     let count = 0;
     // if (e.target.localName === "p") {
     //   e.target = e.target.parentElement.children[0];
@@ -74,6 +75,7 @@ for (let i = 0; i < petBox.length; i++) {
         closeDiv.classList.add('closeDiv')
         let closeDivP = document.createElement('p');
         closeDiv.addEventListener('click', () => {
+          document.body.style.overflow = 'visible'
           document.body.removeChild(domMain);
         })
 
