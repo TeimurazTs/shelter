@@ -2,6 +2,20 @@
 let burger = document.querySelector(".dom-burger");
 let menu = document.querySelector(".dom-main-header");
 
+menu.addEventListener("click", (e) => {
+  if (
+    e.target.parentElement.parentElement.parentElement.parentElement === null
+  ) {
+    burger.classList.toggle("dom-rotate");
+    if (burger.classList[2] === "dom-rotate") {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+    menu.classList.toggle("dom-display-none");
+  }
+});
+
 burger.addEventListener("click", () => {
   burger.classList.toggle("dom-rotate");
   if (burger.classList[2] === "dom-rotate") {
@@ -69,6 +83,13 @@ for (let i = 0; i < petBox.length; i++) {
         domMain.style.top = window.scrollY + "px";
         document.body.append(domMain);
 
+        domMain.addEventListener("click", (e) => {
+          if (e.target.parentElement.parentElement.parentElement === null) {
+            document.body.style.overflow = "visible";
+            document.body.removeChild(domMain);
+          }
+        });
+
         let domDiv = document.createElement("div");
         domDiv.classList.add("dom-div-popup");
         domMain.append(domDiv);
@@ -84,6 +105,17 @@ for (let i = 0; i < petBox.length; i++) {
         closeDivP.textContent = "x";
         closeDiv.append(closeDivP);
         domDiv.append(closeDiv);
+
+        domMain.addEventListener("mouseover", (e) => {
+          if (e.target.classList[0] === "dom-main-popup") {
+            closeDiv.style.backgroundColor = "#FDDCC4";
+          }
+        });
+
+        domDiv.addEventListener('mouseenter', () => {
+          closeDiv.style.backgroundColor = 'white';
+          console.log('holla')
+        })
 
         if (window.screen.availWidth > 766) {
           let domImg = document.createElement("img");
