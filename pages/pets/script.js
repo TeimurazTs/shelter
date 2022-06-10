@@ -35,8 +35,12 @@ let domDoubleMinus = document.querySelector(".dom-double-minus");
 
 domPaginationMinus.addEventListener("click", () => {
   if (counter < 2) {
+    domPaginationMinus.classList.add("arrow-disable");
+    domDoubleMinus.classList.add("arrow-disable");
     domPaginationMinus.removeEventListener("click");
   }
+  domPointerButton.classList.remove("arrow-disable");
+  domDoubleArrowPlus.classList.remove("arrow-disable");
   counter--;
   domPaginationCount.textContent = counter;
   domDoubleArrowPlus.addEventListener("click", doublePlus);
@@ -83,11 +87,15 @@ domPointerButton.addEventListener("click", () => {
 function pagination(petsObject) {
   createErray();
   createErray2();
+  domPaginationMinus.classList.remove("arrow-disable");
+  domDoubleMinus.classList.remove("arrow-disable");
   counter++;
   domDoubleArrowPlus.addEventListener("click", doublePlus);
   domDoubleMinus.addEventListener("click", minusFunction);
   if (counter > 6) {
     counter = 6;
+    domPointerButton.classList.add("arrow-disable");
+    domDoubleArrowPlus.classList.add("arrow-disable");
     domPointerButton.removeEventListener("click");
     evenListenerCout = 0;
   }
@@ -107,8 +115,11 @@ function doublePlus() {
   counter = 6;
   domPaginationCount.textContent = counter;
   domDoubleMinus.addEventListener("click", minusFunction);
+  domPaginationMinus.classList.remove("arrow-disable");
+  domDoubleMinus.classList.remove("arrow-disable");
   setTimeout(() => {
-    console.log("ji");
+    domPointerButton.classList.add("arrow-disable");
+    domDoubleArrowPlus.classList.add("arrow-disable");
     domDoubleArrowPlus.removeEventListener("click", doublePlus);
   }, 0);
   fetch("../Pets.json")
@@ -133,9 +144,12 @@ domDoubleMinus.addEventListener("click", minusFunction);
 function minusFunction() {
   counter = 1;
   domPaginationCount.textContent = counter;
+  domPointerButton.classList.remove("arrow-disable");
+  domDoubleArrowPlus.classList.remove("arrow-disable");
   domDoubleArrowPlus.addEventListener("click", doublePlus);
   setTimeout(() => {
-    console.log("ji");
+    domPaginationMinus.classList.add("arrow-disable");
+    domDoubleMinus.classList.add("arrow-disable");
     domDoubleMinus.removeEventListener("click", minusFunction);
   }, 0);
   fetch("../Pets.json")
