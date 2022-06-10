@@ -26,7 +26,7 @@ function disableScroll() {
   };
 }
 function enableScroll() {
-  window.onscroll = function () { };
+  window.onscroll = function () {};
 }
 
 // navigation listeners
@@ -63,31 +63,36 @@ for (let i = 0; i < petBox.length; i++) {
         ) {
           count++;
         }
-        document.body.style.overflow = 'hidden'
+        document.body.style.overflow = "hidden";
         let domMain = document.createElement("main");
         domMain.classList.add("dom-main-popup");
-        domMain.style.top = window.scrollY + 'px';
+        domMain.style.top = window.scrollY + "px";
         document.body.append(domMain);
 
         let domDiv = document.createElement("div");
         domDiv.classList.add("dom-div-popup");
         domMain.append(domDiv);
 
-        let closeDiv = document.createElement('div');
-        closeDiv.classList.add('closeDiv')
-        let closeDivP = document.createElement('p');
-        closeDiv.addEventListener('click', () => {
-          document.body.style.overflow = 'visible'
+        let closeDiv = document.createElement("div");
+        closeDiv.classList.add("closeDiv");
+        let closeDivP = document.createElement("p");
+        closeDiv.addEventListener("click", () => {
+          document.body.style.overflow = "visible";
           document.body.removeChild(domMain);
-        })
+        });
 
-        closeDivP.textContent = 'x';
+        closeDivP.textContent = "x";
         closeDiv.append(closeDivP);
         domDiv.append(closeDiv);
 
-        let domImg = document.createElement("img");
-        domImg.setAttribute("src", `${e.target.parentElement.children[0].attributes.src.nodeValue}`);
-        domDiv.append(domImg);
+        if (window.screen.availWidth > 766) {
+          let domImg = document.createElement("img");
+          domImg.setAttribute(
+            "src",
+            `${e.target.parentElement.children[0].attributes.src.nodeValue}`
+          );
+          domDiv.append(domImg);
+        }
 
         let domDivChild = document.createElement("div");
         domDivChild.classList.add("dom-div-child");
