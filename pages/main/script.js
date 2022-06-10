@@ -48,8 +48,8 @@ for (let i = 0; i < 3; i++) {
 
 for (let i = 0; i < petBox.length; i++) {
   petBox[i].addEventListener("click", (e) => {
-    document.body.style.overflow = 'hidden'
     let count = 0;
+    console.log(e);
     // if (e.target.localName === "p") {
     //   e.target = e.target.parentElement.children[0];
     // }
@@ -63,8 +63,10 @@ for (let i = 0; i < petBox.length; i++) {
         ) {
           count++;
         }
+        document.body.style.overflow = 'hidden'
         let domMain = document.createElement("main");
         domMain.classList.add("dom-main-popup");
+        domMain.style.top = window.scrollY + 'px';
         document.body.append(domMain);
 
         let domDiv = document.createElement("div");
